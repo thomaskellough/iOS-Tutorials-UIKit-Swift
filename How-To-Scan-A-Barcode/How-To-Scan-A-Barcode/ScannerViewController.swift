@@ -61,6 +61,7 @@ extension ScannerViewController {
         
         addMetaData()
         addPreviewLayer()
+        showScanBounds()
         
         avCaptureSession.startRunning()
     }
@@ -70,6 +71,15 @@ extension ScannerViewController {
         avPreviewLayer.frame = view.layer.bounds
         avPreviewLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(avPreviewLayer)
+    }
+    
+    func showScanBounds() {
+        let rectangle = UIBezierPath(rect: CGRect(x: 8, y: (view.bounds.size.height / 2) + 30, width: view.bounds.size.width - 16, height: 60))
+        let boundLayer = CAShapeLayer.init()
+        boundLayer.path = rectangle.cgPath
+        boundLayer.fillColor = UIColor(red: 0, green: 1, blue: 0, alpha: 0.1).cgColor
+        boundLayer.strokeColor = UIColor.green.cgColor
+        avPreviewLayer.addSublayer(boundLayer)
     }
 }
 
