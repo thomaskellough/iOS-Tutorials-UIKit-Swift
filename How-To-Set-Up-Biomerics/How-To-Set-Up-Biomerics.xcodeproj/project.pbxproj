@@ -13,6 +13,7 @@
 		BCF2100A24D8DAFE00899B6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF2100824D8DAFE00899B6F /* Main.storyboard */; };
 		BCF2100C24D8DAFF00899B6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF2100B24D8DAFF00899B6F /* Assets.xcassets */; };
 		BCF2100F24D8DAFF00899B6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF2100D24D8DAFF00899B6F /* LaunchScreen.storyboard */; };
+		BCF2101724D8E52C00899B6F /* Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF2101624D8E52C00899B6F /* Biometrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BCF2100B24D8DAFF00899B6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCF2100E24D8DAFF00899B6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCF2101024D8DAFF00899B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF2101624D8E52C00899B6F /* Biometrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biometrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BCF2100B24D8DAFF00899B6F /* Assets.xcassets */,
 				BCF2100D24D8DAFF00899B6F /* LaunchScreen.storyboard */,
 				BCF2101024D8DAFF00899B6F /* Info.plist */,
+				BCF2101624D8E52C00899B6F /* Biometrics.swift */,
 			);
 			path = "How-To-Set-Up-Biomerics";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF2101724D8E52C00899B6F /* Biometrics.swift in Sources */,
 				BCF2100724D8DAFE00899B6F /* ViewController.swift in Sources */,
 				BCF2100324D8DAFE00899B6F /* AppDelegate.swift in Sources */,
 				BCF2100524D8DAFE00899B6F /* SceneDelegate.swift in Sources */,
