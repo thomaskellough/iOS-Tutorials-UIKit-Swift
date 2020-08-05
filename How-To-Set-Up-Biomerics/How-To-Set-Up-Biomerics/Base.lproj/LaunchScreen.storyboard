@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Iz-cg-sMU">
-                                <rect key="frame" x="62" y="307" width="290" height="291.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="4Iz-cg-sMU">
+                                <rect key="frame" x="62" y="308" width="290" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Iz-cg-sMU" secondAttribute="height" multiplier="1:1" id="xbv-Dk-jIz"/>
                                 </constraints>
@@ -37,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bolt.fill" catalog="system" width="101" height="128"/>
+        <image name="logo" width="500" height="450"/>
     </resources>
 </document>

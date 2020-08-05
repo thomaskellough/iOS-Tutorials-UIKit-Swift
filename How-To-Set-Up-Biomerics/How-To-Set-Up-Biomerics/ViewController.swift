@@ -10,10 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var biometrics: Biometrics?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Biometrics().authenticateUser()
+        biometrics = Biometrics()
+        biometrics?.showLockedScreen(backgroundColor: .systemYellow, logo: UIImage(named: "logo"), width: 0.7, toView: self.view)
+        biometrics?.authenticateUser()
     }
     
 }
