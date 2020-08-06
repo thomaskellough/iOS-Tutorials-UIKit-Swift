@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BCC211E024DB947600DD34C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC211DF24DB947600DD34C1 /* AppDelegate.swift */; };
-		BCC211E224DB947600DD34C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC211E124DB947600DD34C1 /* SceneDelegate.swift */; };
-		BCC211E424DB947600DD34C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC211E324DB947600DD34C1 /* ViewController.swift */; };
-		BCC211E724DB947600DD34C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC211E524DB947600DD34C1 /* Main.storyboard */; };
-		BCC211E924DB947800DD34C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC211E824DB947800DD34C1 /* Assets.xcassets */; };
-		BCC211EC24DB947800DD34C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC211EA24DB947800DD34C1 /* LaunchScreen.storyboard */; };
+		BC23326524DB9A04006AFAED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23326424DB9A04006AFAED /* AppDelegate.swift */; };
+		BC23326724DB9A04006AFAED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23326624DB9A04006AFAED /* SceneDelegate.swift */; };
+		BC23326924DB9A04006AFAED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23326824DB9A04006AFAED /* ViewController.swift */; };
+		BC23326C24DB9A04006AFAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC23326A24DB9A04006AFAED /* Main.storyboard */; };
+		BC23326E24DB9A05006AFAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC23326D24DB9A05006AFAED /* Assets.xcassets */; };
+		BC23327124DB9A05006AFAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC23326F24DB9A05006AFAED /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BCC211DC24DB947600DD34C1 /* How-To-Setup-Biometrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "How-To-Setup-Biometrics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCC211DF24DB947600DD34C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCC211E124DB947600DD34C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCC211E324DB947600DD34C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCC211E624DB947600DD34C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCC211E824DB947800DD34C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BCC211EB24DB947800DD34C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BCC211ED24DB947800DD34C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC23326124DB9A04006AFAED /* How-To-Setup-Biometrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "How-To-Setup-Biometrics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC23326424DB9A04006AFAED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC23326624DB9A04006AFAED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC23326824DB9A04006AFAED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC23326B24DB9A04006AFAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC23326D24DB9A05006AFAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC23327024DB9A05006AFAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC23327224DB9A05006AFAED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BCC211D924DB947600DD34C1 /* Frameworks */ = {
+		BC23325E24DB9A04006AFAED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BCC211D324DB947600DD34C1 = {
+		BC23325824DB9A04006AFAED = {
 			isa = PBXGroup;
 			children = (
-				BCC211DE24DB947600DD34C1 /* How-To-Setup-Biometrics */,
-				BCC211DD24DB947600DD34C1 /* Products */,
+				BC23326324DB9A04006AFAED /* How-To-Setup-Biometrics */,
+				BC23326224DB9A04006AFAED /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BCC211DD24DB947600DD34C1 /* Products */ = {
+		BC23326224DB9A04006AFAED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BCC211DC24DB947600DD34C1 /* How-To-Setup-Biometrics.app */,
+				BC23326124DB9A04006AFAED /* How-To-Setup-Biometrics.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BCC211DE24DB947600DD34C1 /* How-To-Setup-Biometrics */ = {
+		BC23326324DB9A04006AFAED /* How-To-Setup-Biometrics */ = {
 			isa = PBXGroup;
 			children = (
-				BCC211DF24DB947600DD34C1 /* AppDelegate.swift */,
-				BCC211E124DB947600DD34C1 /* SceneDelegate.swift */,
-				BCC211E324DB947600DD34C1 /* ViewController.swift */,
-				BCC211E524DB947600DD34C1 /* Main.storyboard */,
-				BCC211E824DB947800DD34C1 /* Assets.xcassets */,
-				BCC211EA24DB947800DD34C1 /* LaunchScreen.storyboard */,
-				BCC211ED24DB947800DD34C1 /* Info.plist */,
+				BC23326424DB9A04006AFAED /* AppDelegate.swift */,
+				BC23326624DB9A04006AFAED /* SceneDelegate.swift */,
+				BC23326824DB9A04006AFAED /* ViewController.swift */,
+				BC23326A24DB9A04006AFAED /* Main.storyboard */,
+				BC23326D24DB9A05006AFAED /* Assets.xcassets */,
+				BC23326F24DB9A05006AFAED /* LaunchScreen.storyboard */,
+				BC23327224DB9A05006AFAED /* Info.plist */,
 			);
 			path = "How-To-Setup-Biometrics";
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BCC211DB24DB947600DD34C1 /* How-To-Setup-Biometrics */ = {
+		BC23326024DB9A04006AFAED /* How-To-Setup-Biometrics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BCC211F024DB947800DD34C1 /* Build configuration list for PBXNativeTarget "How-To-Setup-Biometrics" */;
+			buildConfigurationList = BC23327524DB9A05006AFAED /* Build configuration list for PBXNativeTarget "How-To-Setup-Biometrics" */;
 			buildPhases = (
-				BCC211D824DB947600DD34C1 /* Sources */,
-				BCC211D924DB947600DD34C1 /* Frameworks */,
-				BCC211DA24DB947600DD34C1 /* Resources */,
+				BC23325D24DB9A04006AFAED /* Sources */,
+				BC23325E24DB9A04006AFAED /* Frameworks */,
+				BC23325F24DB9A04006AFAED /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = "How-To-Setup-Biometrics";
 			productName = "How-To-Setup-Biometrics";
-			productReference = BCC211DC24DB947600DD34C1 /* How-To-Setup-Biometrics.app */;
+			productReference = BC23326124DB9A04006AFAED /* How-To-Setup-Biometrics.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BCC211D424DB947600DD34C1 /* Project object */ = {
+		BC23325924DB9A04006AFAED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Thomas Kellough";
 				TargetAttributes = {
-					BCC211DB24DB947600DD34C1 = {
+					BC23326024DB9A04006AFAED = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = BCC211D724DB947600DD34C1 /* Build configuration list for PBXProject "How-To-Setup-Biometrics" */;
+			buildConfigurationList = BC23325C24DB9A04006AFAED /* Build configuration list for PBXProject "How-To-Setup-Biometrics" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = BCC211D324DB947600DD34C1;
-			productRefGroup = BCC211DD24DB947600DD34C1 /* Products */;
+			mainGroup = BC23325824DB9A04006AFAED;
+			productRefGroup = BC23326224DB9A04006AFAED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BCC211DB24DB947600DD34C1 /* How-To-Setup-Biometrics */,
+				BC23326024DB9A04006AFAED /* How-To-Setup-Biometrics */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BCC211DA24DB947600DD34C1 /* Resources */ = {
+		BC23325F24DB9A04006AFAED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC211EC24DB947800DD34C1 /* LaunchScreen.storyboard in Resources */,
-				BCC211E924DB947800DD34C1 /* Assets.xcassets in Resources */,
-				BCC211E724DB947600DD34C1 /* Main.storyboard in Resources */,
+				BC23327124DB9A05006AFAED /* LaunchScreen.storyboard in Resources */,
+				BC23326E24DB9A05006AFAED /* Assets.xcassets in Resources */,
+				BC23326C24DB9A04006AFAED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BCC211D824DB947600DD34C1 /* Sources */ = {
+		BC23325D24DB9A04006AFAED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCC211E424DB947600DD34C1 /* ViewController.swift in Sources */,
-				BCC211E024DB947600DD34C1 /* AppDelegate.swift in Sources */,
-				BCC211E224DB947600DD34C1 /* SceneDelegate.swift in Sources */,
+				BC23326924DB9A04006AFAED /* ViewController.swift in Sources */,
+				BC23326524DB9A04006AFAED /* AppDelegate.swift in Sources */,
+				BC23326724DB9A04006AFAED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BCC211E524DB947600DD34C1 /* Main.storyboard */ = {
+		BC23326A24DB9A04006AFAED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BCC211E624DB947600DD34C1 /* Base */,
+				BC23326B24DB9A04006AFAED /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		BCC211EA24DB947800DD34C1 /* LaunchScreen.storyboard */ = {
+		BC23326F24DB9A05006AFAED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BCC211EB24DB947800DD34C1 /* Base */,
+				BC23327024DB9A05006AFAED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		BCC211EE24DB947800DD34C1 /* Debug */ = {
+		BC23327324DB9A05006AFAED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		BCC211EF24DB947800DD34C1 /* Release */ = {
+		BC23327424DB9A05006AFAED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		BCC211F124DB947800DD34C1 /* Debug */ = {
+		BC23327624DB9A05006AFAED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -298,7 +298,7 @@
 			};
 			name = Debug;
 		};
-		BCC211F224DB947800DD34C1 /* Release */ = {
+		BC23327724DB9A05006AFAED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BCC211D724DB947600DD34C1 /* Build configuration list for PBXProject "How-To-Setup-Biometrics" */ = {
+		BC23325C24DB9A04006AFAED /* Build configuration list for PBXProject "How-To-Setup-Biometrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BCC211EE24DB947800DD34C1 /* Debug */,
-				BCC211EF24DB947800DD34C1 /* Release */,
+				BC23327324DB9A05006AFAED /* Debug */,
+				BC23327424DB9A05006AFAED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BCC211F024DB947800DD34C1 /* Build configuration list for PBXNativeTarget "How-To-Setup-Biometrics" */ = {
+		BC23327524DB9A05006AFAED /* Build configuration list for PBXNativeTarget "How-To-Setup-Biometrics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BCC211F124DB947800DD34C1 /* Debug */,
-				BCC211F224DB947800DD34C1 /* Release */,
+				BC23327624DB9A05006AFAED /* Debug */,
+				BC23327724DB9A05006AFAED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BCC211D424DB947600DD34C1 /* Project object */;
+	rootObject = BC23325924DB9A04006AFAED /* Project object */;
 }
