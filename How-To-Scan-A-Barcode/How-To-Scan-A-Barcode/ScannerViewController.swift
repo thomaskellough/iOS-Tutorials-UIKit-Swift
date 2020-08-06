@@ -18,6 +18,9 @@ class ScannerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let torchButton = UIBarButtonItem(title: "Torch", style: .plain, target: self, action: #selector(toggleTorch))
+        navigationItem.rightBarButtonItem = torchButton
     
     }
     
@@ -101,6 +104,24 @@ extension ScannerViewController {
         boundLayer.fillColor = UIColor(red: 0, green: 1, blue: 0, alpha: 0.1).cgColor
         boundLayer.strokeColor = UIColor.green.cgColor
         avPreviewLayer.addSublayer(boundLayer)
+    }
+    
+    @objc func toggleTorch() {
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        guard device.hasTorch else { return }
+        
+        do {
+            try device.lockForConfiguration()
+            
+            if device.torchMode == .on {
+                device.torchMode = .off
+            } else {
+                device.torchMode = .on
+            }
+            
+        } catch {
+            print("There was an error trying to use the torch")
+        }
     }
 }
 
