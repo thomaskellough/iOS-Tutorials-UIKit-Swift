@@ -69,22 +69,6 @@ extension ScannerViewController {
         avCaptureSession.startRunning()
     }
     
-    override func viewDidLayoutSubviews() {
-        self.configureVideoOrientation()
-    }
-    
-    func configureVideoOrientation() {
-        if let previewLayer = avPreviewLayer, let connection = previewLayer.connection {
-            let orientation = UIDevice.current.orientation
-
-            if connection.isVideoOrientationSupported,
-                let videoOrientation = AVCaptureVideoOrientation(rawValue: orientation.rawValue) {
-                previewLayer.frame = self.view.bounds
-                connection.videoOrientation = videoOrientation
-                showScanBounds()
-            }
-        }
-    }
     
     func addPreviewLayer() {
         avPreviewLayer = AVCaptureVideoPreviewLayer(session: avCaptureSession)
@@ -94,9 +78,6 @@ extension ScannerViewController {
     }
     
     func showScanBounds() {
-        if avPreviewLayer.sublayers?.count == 3 {
-            avPreviewLayer.sublayers?.remove(at: 2)
-        }
 
         let rectangle = UIBezierPath(rect: CGRect(x: 8, y: (view.bounds.size.height / 2) + 30, width: view.bounds.size.width - 16, height: 60))
         let boundLayer = CAShapeLayer.init()
