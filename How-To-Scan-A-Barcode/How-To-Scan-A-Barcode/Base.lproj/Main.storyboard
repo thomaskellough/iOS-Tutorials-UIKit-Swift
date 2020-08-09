@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Scanner View Controller-->
         <scene sceneID="WGz-rf-E8i">
             <objects>
-                <viewController storyboardIdentifier="scannerViewController" id="m8P-DZ-8yy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="scannerViewController" id="m8P-DZ-8yy" customClass="ScannerViewController" customModule="How_To_Scan_A_Barcode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lad-6c-g3i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

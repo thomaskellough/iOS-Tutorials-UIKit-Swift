@@ -10,13 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var textLabel: UIView!
+    @IBOutlet weak var textLabel: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let scanBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(scanBarcode))
+        navigationItem.rightBarButtonItem = scanBarButtonItem
+    }
+    
+    @objc func scanBarcode() {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "scannerViewController") as? ScannerViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 
 
+    func updateLabel() {
+        // this will be where we update our label
+    }
+    
 }
 

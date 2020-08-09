@@ -13,6 +13,7 @@
 		BCD4B21024DF36C800636E7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD4B20E24DF36C800636E7D /* Main.storyboard */; };
 		BCD4B21224DF36CA00636E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD4B21124DF36CA00636E7D /* Assets.xcassets */; };
 		BCD4B21524DF36CA00636E7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD4B21324DF36CA00636E7D /* LaunchScreen.storyboard */; };
+		BCD4B21D24E0A34700636E7D /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4B21C24E0A34700636E7D /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BCD4B21124DF36CA00636E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCD4B21424DF36CA00636E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCD4B21624DF36CA00636E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD4B21C24E0A34700636E7D /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BCD4B21124DF36CA00636E7D /* Assets.xcassets */,
 				BCD4B21324DF36CA00636E7D /* LaunchScreen.storyboard */,
 				BCD4B21624DF36CA00636E7D /* Info.plist */,
+				BCD4B21C24E0A34700636E7D /* ScannerViewController.swift */,
 			);
 			path = "How-To-Scan-A-Barcode";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				BCD4B20D24DF36C800636E7D /* ViewController.swift in Sources */,
 				BCD4B20924DF36C800636E7D /* AppDelegate.swift in Sources */,
 				BCD4B20B24DF36C800636E7D /* SceneDelegate.swift in Sources */,
+				BCD4B21D24E0A34700636E7D /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
