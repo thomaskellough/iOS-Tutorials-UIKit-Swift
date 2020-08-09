@@ -6,25 +6,54 @@
 //  Copyright © 2020 Thomas Kellough. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 class ScannerViewController: UIViewController {
 
+    var avCaptureSession: AVCaptureSession!
+    var avPreviewLayer: AVCaptureVideoPreviewLayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpScanner()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if avCaptureSession?.isRunning == true {
+            avCaptureSession.stopRunning()
+        }
     }
-    */
-
+    
+    func setUpScanner() {
+        avCaptureSession = AVCaptureSession()
+        guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
+        
+        do {
+            let videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
+            if avCaptureSession.canAddInput(videoInput) {
+                avCaptureSession.addInput(videoInput)
+            } else {
+                // Add error message here
+                return
+            }
+        } catch {
+            // Add error message here
+            return
+        }
+        
+        avCaptureSession.startRunning()
+        addPreviewLayer()
+    }
+    
+    func addPreviewLayer() {
+        avPreviewLayer = AVCaptureVideoPreviewLayer(session: avCaptureSession)
+        avPreviewLayer.frame = view.layer.bounds
+        avPreviewLayer.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(avPreviewLayer)
+    }
+    
 }
