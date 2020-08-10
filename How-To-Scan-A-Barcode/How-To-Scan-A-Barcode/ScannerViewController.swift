@@ -18,6 +18,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let torchButton = UIBarButtonItem(title: "Torch", style: .plain, target: self, action: #selector(toggleTorch))
+        navigationItem.rightBarButtonItem = torchButton
+        
         setUpScanner()
     }
     
@@ -56,6 +59,24 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         avPreviewLayer.frame = view.layer.bounds
         avPreviewLayer.videoGravity = .resizeAspectFill
         view.layer.addSublayer(avPreviewLayer)
+    }
+    
+    @objc func toggleTorch() {
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        guard device.hasTorch else { return }
+        
+        do {
+            try device.lockForConfiguration()
+            
+            if device.torchMode == .on {
+                device.torchMode = .off
+            } else {
+                device.torchMode = .on
+            }
+            
+        } catch {
+            print("There was an error trying to use the torch")
+        }
     }
     
 }
