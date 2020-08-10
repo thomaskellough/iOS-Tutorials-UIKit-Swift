@@ -21,13 +21,14 @@ class ViewController: UIViewController {
     
     @objc func scanBarcode() {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "scannerViewController") as? ScannerViewController {
+            vc.delegate = self
             navigationController?.pushViewController(vc, animated: true)
         }
     }
 
 
-    func updateLabel() {
-        // this will be where we update our label
+    func updateLabel(text: String) {
+        textLabel.text = text
     }
     
 }

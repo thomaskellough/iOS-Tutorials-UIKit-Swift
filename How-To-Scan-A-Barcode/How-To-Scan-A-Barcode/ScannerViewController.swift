@@ -13,6 +13,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
     var avCaptureSession: AVCaptureSession!
     var avPreviewLayer: AVCaptureVideoPreviewLayer!
+    weak var delegate: ViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,6 +92,6 @@ extension ScannerViewController {
     }
 
     func readMetaData(data: String) {
-
+        delegate.updateLabel(text: data)
     }
 }
