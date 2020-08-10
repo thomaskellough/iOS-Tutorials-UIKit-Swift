@@ -9,7 +9,7 @@
 import AVFoundation
 import UIKit
 
-class ScannerViewController: UIViewController {
+class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     var avCaptureSession: AVCaptureSession!
     var avPreviewLayer: AVCaptureVideoPreviewLayer!
@@ -47,6 +47,7 @@ class ScannerViewController: UIViewController {
         
         avCaptureSession.startRunning()
         addPreviewLayer()
+        addMetaData()
     }
     
     func addPreviewLayer() {
@@ -56,4 +57,40 @@ class ScannerViewController: UIViewController {
         view.layer.addSublayer(avPreviewLayer)
     }
     
+}
+
+// MARK: Metadata
+
+extension ScannerViewController {
+    func addMetaData() {
+        let metadataOutput = AVCaptureMetadataOutput()
+        
+        if avCaptureSession.canAddOutput(metadataOutput) {
+            avCaptureSession.addOutput(metadataOutput)
+            
+            metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
+            metadataOutput.metadataObjectTypes = [.pdf417]
+        } else {
+            // Add error message here
+            return
+        }
+    }
+    
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        avCaptureSession.stopRunning()
+        
+        if let metadataObject = metadataObjects.first {
+            guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
+            guard let stringObject = readableObject.stringValue else { return }
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            
+            readMetaData(data: stringObject)
+        }
+        
+        navigationController?.popViewController(animated: true)
+    }
+
+    func readMetaData(data: String) {
+
+    }
 }
