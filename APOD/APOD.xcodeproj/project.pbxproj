@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		BC582FA024F2C8E400F94D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC582F9E24F2C8E400F94D45 /* Main.storyboard */; };
 		BC582FA224F2C8E500F94D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC582FA124F2C8E500F94D45 /* Assets.xcassets */; };
 		BC582FA524F2C8E500F94D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC582FA324F2C8E500F94D45 /* LaunchScreen.storyboard */; };
+		BC582FAD24F3123000F94D45 /* ADPOmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC582FAC24F3123000F94D45 /* ADPOmodel.swift */; };
 		DAC5F8B3B544519E69792151 /* Pods_APOD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D2C023D0DE67BE052FFF64 /* Pods_APOD.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		BC582FA124F2C8E500F94D45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC582FA424F2C8E500F94D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC582FA624F2C8E500F94D45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC582FAC24F3123000F94D45 /* ADPOmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADPOmodel.swift; sourceTree = "<group>"; };
 		F9D2C023D0DE67BE052FFF64 /* Pods_APOD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APOD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				5040F3BF64CBF9BC5AE060D8 /* Pods-APOD.debug.xcconfig */,
 				206343B3137DAED7BC3CD03A /* Pods-APOD.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 				BC582FA124F2C8E500F94D45 /* Assets.xcassets */,
 				BC582FA324F2C8E500F94D45 /* LaunchScreen.storyboard */,
 				BC582FA624F2C8E500F94D45 /* Info.plist */,
+				BC582FAC24F3123000F94D45 /* ADPOmodel.swift */,
 			);
 			path = APOD;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 				BC582F9D24F2C8E400F94D45 /* ViewController.swift in Sources */,
 				BC582F9924F2C8E400F94D45 /* AppDelegate.swift in Sources */,
 				BC582F9B24F2C8E400F94D45 /* SceneDelegate.swift in Sources */,
+				BC582FAD24F3123000F94D45 /* ADPOmodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
