@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import How_To_Use_Unit_Testing
 
 class How_To_Use_Unit_TestingTests: XCTestCase {
 
@@ -16,17 +17,59 @@ class How_To_Use_Unit_TestingTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testFirstNameHarryIsValid_True() {
+        let name = "Harry"
+        let isValid = name.isValidFirstName
+        XCTAssertTrue(isValid, "Uh oh! \(name) is not valid")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testFirstNamehermioneIsValid_True() {
+        let name = "hermione"
+        let isValid = name.isValidFirstName
+        XCTAssertTrue(isValid, "Uh oh! \(name) is not valid")
+    }
+    
+    func testFirstNameRon5IsValid_False() {
+        let name = "Ron5"
+        let isValid = name.isValidFirstName
+        XCTAssertFalse(isValid, "Uh oh! \(name) is not valid")
+    }
+    
+    func testLastNamePotterIsValid_True() {
+        let name = "Potter"
+        let isValid = name.isValidLastName
+        XCTAssertTrue(isValid)
+    }
+    
+    func testDobIsValid1_True() {
+        let dob = "01/01/1980"
+        let isValid = dob.isValidDOB
+        XCTAssertTrue(isValid)
+    }
+    
+    func testDobIsValid1_False() {
+        let dob = "01/01/80"
+        let isValid = dob.isValidDOB
+        XCTAssertFalse(isValid)
+    }
+    
+    func test1234IsValid_True() {
+        let pin = "1234"
+        let isValid = pin.isValidPin
+        XCTAssertTrue(isValid)
+    }
+    
+    func test12345IsValid_False() {
+        let pin = "12345"
+        let isValid = pin.isValidPin
+        XCTAssertFalse(isValid)
+    }
+    
+    func testa234ISValid_False() {
+        let pin = "a234"
+        let isValid = pin.isValidPin
+        XCTAssertFalse(isValid)
     }
 
 }
